@@ -1,0 +1,38 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
+services:
+
+    mysql:
+      image: mysql:5.7
+      container_name: laravel-orchid-mysql
+      working_dir: /application
+      volumes:
+        - ./src:/application
+      environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_DATABASE=laravel_orchid_db
+        - MYSQL_USER=root
+        - MYSQL_PASSWORD=root
+      ports:
+        - "8284:3306"
+
+    webserver:
+      image: nginx:alpine
+      container_name: laravel-orchid-webserver
+      working_dir: /application
+      volumes:
+          - ./src:/application
+          - ./backend/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      ports:
+       - "8282:80"
+
+    php-fpm:
+      build: backend/php-fpm
+      container_name: laravel-orchid-php-fpm
+      working_dir: /application
+      volumes:
+        - ./src:/application
+        - ./backend/php-fpm/php-ini-overrides.ini:/etc/php/7.2/fpm/conf.d/99-overrides.ini
+
