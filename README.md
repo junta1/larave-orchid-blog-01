@@ -15,11 +15,10 @@ Fonte: <https://usebootstrap.com/theme/business-casual>
 
 ## Levantar o Container
 
-Acesse ao projeto e lavante o container:
+Acesse ao projeto e lavante o container: `docker-compose up -d`
 
-`docker-compose up -d`
+Link para acessar a página inicial do projeto: <http://localhost:8282>
 
-Link para acessar ao projeto: <http://localhost:8282>
 Link para acessar o Dashboard: <http://localhost:8282/dashboard>
 
 _Obs: Configure o projeto nos próximos passos._ 
