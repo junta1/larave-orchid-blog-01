@@ -13,6 +13,17 @@ Fonte: <https://usebootstrap.com/theme/business-casual>
 
 `git clone https://github.com/junta1/larave-orchid-blog-01.git`
 
+## Levantar o Container
+
+Acesse ao projeto e lavante o container:
+
+`docker-compose up -d`
+
+Link para acessar ao projeto: <http://localhost:8282>
+Link para acessar o Dashboard: <http://localhost:8282/dashboard>
+
+_Obs: Configure o projeto nos próximos passos._ 
+
 ## Configurando projeto
 
 **Criando o atalho de acesso aos estilos de usuário, cenários de javascript e outros arquivos vinculáveis disponíveis:**
