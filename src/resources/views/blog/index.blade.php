@@ -2,8 +2,8 @@
 
 @section('content')
 
-    @if(count($posts) > 0)
-        <div class="container">
+    <div class="container">
+        @if(count($posts) > 0)
             <div class="row">
                 <div class="box">
                     <div class="col-lg-12">
@@ -40,6 +40,20 @@
                     </div>
                 </div>
             </div>
-        </div>
-    @endif
+        @endif
+
+        @if(count($posts) == 0)
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <hr>
+                        <h2 class="intro-text text-center">
+                            <strong>Não há postagens!</strong>
+                        </h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        @endif
+    </div>
 @endsection
