@@ -138,6 +138,10 @@ return [
 
     'many' => [
         Orchid\Platform\Behaviors\Demo\Post::class,
+        App\Behaviors\Many\About::class,
+        App\Behaviors\Many\AboutTeam::class,
+        App\Behaviors\Many\MainSlide::class,
+        App\Behaviors\Many\BlogPost::class,
     ],
 
     /*

@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+$router->get('/', 'MainController@index');
+
+$router->get('/about', 'AboutController@index');
+
+$router->get('/blog', 'BlogController@index');
+
+Route::get('/contact', function () {
+    return view('contact.index');
 });
