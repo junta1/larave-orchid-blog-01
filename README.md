@@ -31,6 +31,8 @@ _Obs: Configure o projeto nos próximos passos._
 
 `php artisan orchid:link`
 
+_Obs: Exclua os atalhos caso exista Orchid ou Storage na pasta /public._
+
 **Gerando a migration**
 
 `php artisan migrate`
